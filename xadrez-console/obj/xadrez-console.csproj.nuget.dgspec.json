@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console.csproj": {}
+    "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/xadrez-console.csproj": {}
   },
   "projects": {
-    "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console.csproj": {
+    "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/xadrez-console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console.csproj",
+        "projectUniqueName": "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/xadrez-console.csproj",
         "projectName": "xadrez-console",
-        "projectPath": "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console.csproj",
+        "projectPath": "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/xadrez-console.csproj",
         "packagesPath": "/home/andre/.nuget/packages/",
-        "outputPath": "/home/andre/Documents/Andre/CSharp/xadrez-console/obj/",
+        "outputPath": "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/andre/.nuget/NuGet/NuGet.Config"

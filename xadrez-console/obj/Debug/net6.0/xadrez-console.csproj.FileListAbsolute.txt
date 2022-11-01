@@ -1,0 +1,15 @@
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/bin/Debug/net6.0/xadrez-console
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/bin/Debug/net6.0/xadrez-console.deps.json
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/bin/Debug/net6.0/xadrez-console.runtimeconfig.json
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/bin/Debug/net6.0/xadrez-console.dll
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/bin/Debug/net6.0/xadrez-console.pdb
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/xadrez-console.csproj.AssemblyReference.cache
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/xadrez-console.GeneratedMSBuildEditorConfig.editorconfig
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/xadrez-console.AssemblyInfoInputs.cache
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/xadrez-console.AssemblyInfo.cs
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/xadrez-console.csproj.CoreCompileInputs.cache
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/xadrez-console.dll
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/refint/xadrez-console.dll
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/xadrez-console.pdb
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/xadrez-console.genruntimeconfig.cache
+/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/obj/Debug/net6.0/ref/xadrez-console.dll

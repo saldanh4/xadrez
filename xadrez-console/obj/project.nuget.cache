@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tzF8XfpjNBFjsHw/H0znUxGe1crXNZY2bWWJw9KmHrzA8V3EamgmGMrJ6Srff6ArWR4IWW4gqwzbyjAXU8HmTg==",
+  "dgSpecHash": "+lDkXGh3yViISOnC8qrdsUQFPsd053WwLpR8IHhyaPMhCwnhcXawVWUrcA5iC/tQ8iF2nrj6fLGJrpnBJVpnKw==",
   "success": true,
-  "projectFilePath": "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console.csproj",
+  "projectFilePath": "/home/andre/Documents/Andre/CSharp/xadrez-console/xadrez-console/xadrez-console.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
