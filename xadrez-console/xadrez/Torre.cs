@@ -12,7 +12,7 @@ namespace xadrez
 
         public override string ToString()
         {
-            if(corTorre == Cor.Preta)
+            if(corTorre == Cor.Branca)
             {
                 return " \x2656 ";
             }
