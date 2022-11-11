@@ -29,11 +29,11 @@ namespace xadrez
                     
                     if (tab.peca(i, j) == null)
                     {
-                        System.Console.Write("  ");
+                        System.Console.Write("   ");
                     }
                     else
                     {
-                        System.Console.Write(tab.peca(i, j) + " ");
+                        System.Console.Write(tab.peca(i, j));
                     }
                     x++;
                 }
@@ -42,6 +42,7 @@ namespace xadrez
                 System.Console.WriteLine();
                 
             }
+            System.Console.WriteLine("   A  B  C  D  E  F  G  H");
         }
     }
 }
