@@ -4,18 +4,18 @@ namespace xadrez
 {
     class Torre : Peca
     {
-        public Cor corTorre { get; private set; }   
+        public Cor corTorre { get; private set; }
         public Torre(Cor cor, Tabuleiro tab) : base(cor, tab)
         {
-            corTorre = cor;            
+            corTorre = cor;
         }
 
         public override string ToString()
         {
-            if(corTorre == Cor.Branca)
-            {
-                return " \x2656 ";
-            }
+            // if(corTorre == Cor.Branca)
+            // {
+            //     return " \x2656 ";
+            // }
             return " \x265C ";
         }
 

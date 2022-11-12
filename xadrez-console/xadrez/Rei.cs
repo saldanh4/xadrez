@@ -12,14 +12,14 @@ namespace xadrez
 
         public override string ToString()
         {
-            if(corRei == Cor.Branca)
-            {
-                return " \x2654 ";
-            }
-            else
-            {
-                return " \x265A ";
-            }
+            // if(corRei == Cor.Branca)
+            // {
+            //     return " \x2654 ";
+            // }
+            // else
+            // {
+                 return " \x265A ";
+            // }
             
         }
 

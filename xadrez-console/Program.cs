@@ -8,14 +8,21 @@ class Program
 
         try
         {
-            Tabuleiro tab = new Tabuleiro(8, 8);
-            tab.colocarPeca(new Torre(Cor.Preta, tab), new Posicao(0, 0));
-            tab.colocarPeca(new Torre(Cor.Branca, tab), new Posicao(1, 3));
-            tab.colocarPeca(new Rei(Cor.Preta, tab), new Posicao(2, 4));
+            PartidaDeXadrez partida = new PartidaDeXadrez();
+            while(!partida.terminada)
+            {
+                Console.Clear();
+                Tela.imprimirTabuleiro(partida.tab);
 
-            tab.colocarPeca(new Rei(Cor.Branca, tab), new Posicao(6, 5));
+                Console.Write("\nOrigem: ");
+                Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
+                Console.Write("Destino: ");
+                Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
 
-            Tela.imprimirTabuleiro(tab);
+                partida.executaMovimento(origem, destino);
+            }
+
+            
         }
         catch(TabuleiroException e)
         {
