@@ -9,8 +9,6 @@ namespace xadrez
             ConsoleColor fundoOriginal = Console.BackgroundColor;
             ConsoleColor fundoAlterado = ConsoleColor.DarkGray;
             
-                
-            
             Console.BackgroundColor = fundoOriginal;
             int x = 0;
             for(int i = 0; i < tab.linhas; i++)
@@ -26,16 +24,52 @@ namespace xadrez
                     {
                         Console.BackgroundColor = fundoOriginal;
                     }
+                        imprimirPeca(tab.peca(i, j));
+                        x++;
+                }
+                x--;
+                Console.BackgroundColor = fundoOriginal;
+                System.Console.WriteLine();
+                
+            }
+            System.Console.WriteLine("   A  B  C  D  E  F  G  H");
+        }
+
+        public static void imprimirTabuleiro(Tabuleiro tab, bool[,] posicoesPossiveis)
+        {
+            ConsoleColor fundoOriginal = Console.BackgroundColor;
+            ConsoleColor fundoAlterado = ConsoleColor.DarkGray;
+            ConsoleColor fundoMovimento = ConsoleColor.Gray;
+            
+            Console.BackgroundColor = fundoOriginal;
+            int x = 0;
+            for(int i = 0; i < tab.linhas; i++)
+            {
+                System.Console.Write(tab.linhas - i + " ");
+                for (int j = 0; j < tab.colunas; j++)
+                {
                     
-                    if (tab.peca(i, j) == null)
+                    
+                    if(x%2 == 0)
                     {
-                        System.Console.Write("   ");
+                        Console.BackgroundColor = fundoAlterado;
+                        if(posicoesPossiveis[i, j])
+                        {
+                            Console.BackgroundColor = fundoMovimento;
+                        }
                     }
                     else
                     {
-                        imprimirPeca(tab.peca(i, j));
+                        Console.BackgroundColor = fundoOriginal;
+                        if(posicoesPossiveis[i, j])
+                        {
+                            Console.BackgroundColor = fundoMovimento;
+                        }
                     }
-                    x++;
+                        imprimirPeca(tab.peca(i, j));
+                        x++;
+                    
+                    
                 }
                 x--;
                 Console.BackgroundColor = fundoOriginal;
@@ -54,20 +88,28 @@ namespace xadrez
         }
         public static void imprimirPeca(Peca peca)
         {
-            if(peca.cor == Cor.Branca)
+            if (peca == null)
             {
-                ConsoleColor aux = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.Write(peca);
-                Console.ForegroundColor = aux;
+                System.Console.Write("   ");
             }
             else
             {
-                ConsoleColor aux = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write(peca);
-                Console.ForegroundColor = aux;
+                if(peca.cor == Cor.Branca)
+                {
+                    ConsoleColor aux = Console.ForegroundColor;
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write(peca);
+                    Console.ForegroundColor = aux;
+                }
+                else
+                {
+                    ConsoleColor aux = Console.ForegroundColor;
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write(peca);
+                    Console.ForegroundColor = aux;
+                }
             }
+            
         }
     }
 }
