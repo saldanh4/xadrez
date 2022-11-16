@@ -10,10 +10,18 @@ namespace xadrez
             imprimirTabuleiro(partida.tab);
             imprimirPecasCapturadas(partida);
             System.Console.WriteLine("\nTurno: " + partida.turno);
-            System.Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
-            if(partida.xeque)
-            { 
-                System.Console.WriteLine("Xeque!");
+            if (!partida.terminada)
+            {
+                System.Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+                if(partida.xeque)
+                { 
+                    System.Console.WriteLine("Xeque!");
+                }
+            }
+            else
+            {
+                System.Console.WriteLine("XEQUE MATE!");
+                System.Console.WriteLine("Vencedor: " + partida.jogadorAtual);
             }
         }
 
@@ -82,8 +90,6 @@ namespace xadrez
                 System.Console.Write(tab.linhas - i + " ");
                 for (int j = 0; j < tab.colunas; j++)
                 {
-                    
-                    
                     if(x%2 == 0)
                     {
                         Console.BackgroundColor = fundoAlterado;
@@ -101,9 +107,7 @@ namespace xadrez
                         }
                     }
                         imprimirPeca(tab.peca(i, j));
-                        x++;
-                    
-                    
+                        x++;                                     
                 }
                 x--;
                 Console.BackgroundColor = fundoOriginal;
