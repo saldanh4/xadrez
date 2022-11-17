@@ -40,6 +40,11 @@ namespace tabuleiro
             return false;
         }
 
+        protected bool podeMover(Posicao pos)
+        {
+            Peca p = tab.peca(pos);
+            return p == null || p.cor !=cor;
+        }
         public bool movimentoPossivel(Posicao pos)
         {
             return movimentosPossiveis()[pos.linha, pos.coluna];
