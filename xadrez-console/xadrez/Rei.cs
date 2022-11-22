@@ -17,14 +17,6 @@ namespace xadrez
         {
                  return " \x265A ";   
         }
-
-
-        private bool podeMover(Posicao pos)
-        {
-            Peca p = tab.peca(pos);
-            return p == null || p.cor != cor;
-        }
-
         private bool testeTorreParaRoque(Posicao pos)
         {
             Peca p = tab.peca(pos);

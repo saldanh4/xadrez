@@ -12,8 +12,6 @@ namespace xadrez
         {
             return " \x265D ";
         }
-
-
         public override bool[,] movimentosPossiveis()
         {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
